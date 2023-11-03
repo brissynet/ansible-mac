@@ -14,10 +14,11 @@ homebrew_installed_packages:
   - act
   - awscli
   - azure-cli
+  - bash-completion
   - ca-certificates
   - cffi
   - docutils
-  - docker
+  - docker-completion
   - dosbox
   - gdbm
   - gettext
@@ -65,7 +66,6 @@ homebrew_taps:
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
   - android-platform-tools
-  - balena-etcher
   - chromedriver
   - deluge
   - docker
