@@ -34,6 +34,7 @@ homebrew_installed_packages:
   - mpdecimal
   - oniguruma
   - openssl@3
+  - packer
   - p7zip
   - pcre2
   - pre-commit
