@@ -15,6 +15,7 @@ homebrew_installed_packages:
   - awscli
   - azure-cli
   - bash-completion
+  - bash-git-prompt
   - ca-certificates
   - cffi
   - docutils
