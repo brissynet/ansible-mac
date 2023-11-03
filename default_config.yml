@@ -14,7 +14,8 @@ homebrew_installed_packages:
   - act
   - awscli
   - azure-cli
-  - bash-completion
+  - bash
+  - bash-completion@2
   - bash-git-prompt
   - ca-certificates
   - cffi
