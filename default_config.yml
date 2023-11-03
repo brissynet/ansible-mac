@@ -2,3 +2,10 @@
 downloads: ~/.ansible-downloads
 
 configure_dotfiles: true
+
+dotfiles_repo: https://github.com/david-oliver/dotfiles.git
+dotfiles_repo_accept_hostkey: true
+dotfiles_repo_local_destination: ~/Code/dotfiles
+dotfiles_files:
+  - .bashrc
+  - .git-completion.bash
