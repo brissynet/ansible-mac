@@ -4,6 +4,7 @@ downloads: ~/.ansible-downloads
 configure_dotfiles: true
 
 dotfiles_repo: https://github.com/david-oliver/dotfiles.git
+dotfiles_repo_version: main
 dotfiles_repo_accept_hostkey: true
 dotfiles_repo_local_destination: ~/Code/dotfiles
 dotfiles_files:
@@ -21,6 +22,7 @@ homebrew_installed_packages:
   - cffi
   - docutils
   - docker-completion
+  - dockutil
   - dosbox
   - gdbm
   - gettext
