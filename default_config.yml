@@ -17,6 +17,7 @@ homebrew_installed_packages:
   - ca-certificates
   - cffi
   - docutils
+  - docker
   - dosbox
   - gdbm
   - gettext
