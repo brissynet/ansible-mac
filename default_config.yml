@@ -12,6 +12,7 @@ dotfiles_repo_local_destination: ~/Code/dotfiles
 dotfiles_files:
   - .bashrc
   - .git-completion.bash
+  - .osx
 
 homebrew_installed_packages:
   - act
