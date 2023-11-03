@@ -38,7 +38,7 @@ homebrew_installed_packages:
   - pcre2
   - pre-commit
   - pycparser
-  - python-certificates
+  - python-certifi
   - python-cryptography
   - python-lxml
   - python-markupsafe
