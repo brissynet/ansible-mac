@@ -2,8 +2,9 @@
 downloads: ~/.ansible-downloads
 
 configure_osx: true
-configure_dotfiles: true
+osx_script: "~/.osx --no-restart"
 
+configure_dotfiles: true
 dotfiles_repo: https://github.com/david-oliver/dotfiles.git
 dotfiles_repo_version: main
 dotfiles_repo_accept_hostkey: true
