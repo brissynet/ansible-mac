@@ -88,3 +88,13 @@ homebrew_cask_apps:
   - vlc
   - vscodium
   - zoom
+
+configure_dock: true
+dockitems_remove: []
+dockitems_persist: 
+  - name: firefox
+    path: /Applications/Firefox.app/
+    pos: 2
+  - name: iTerm
+    path: /Applications/iTerm.app/
+    pos: 3
