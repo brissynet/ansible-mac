@@ -94,7 +94,16 @@ dockitems_remove: []
 dockitems_persist: 
   - name: firefox
     path: /Applications/Firefox.app/
-    pos: 2
+    pos: 1
   - name: iTerm
     path: /Applications/iTerm.app/
+    pos: 2
+  - name: VSCodium
+    path: /Applications/VSCodium.app/
     pos: 3
+  - name: Slack
+    path: /Applications/Slack.app/
+    pos: 4
+  - name: Signal
+    path: /Applications/Signal.app/
+    pos: 5
