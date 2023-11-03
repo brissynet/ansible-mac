@@ -1,6 +1,7 @@
 ---
 downloads: ~/.ansible-downloads
 
+configure_osx: true
 configure_dotfiles: true
 
 dotfiles_repo: https://github.com/david-oliver/dotfiles.git
