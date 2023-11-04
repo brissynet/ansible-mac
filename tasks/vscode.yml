@@ -1,0 +1,5 @@
+---
+- name: 'Ensure Apple quarantine is removed'
+  shell: xattr -d com.apple.quarantine /Applications/VSCodium.app
+  ignore_errors: true
+  become: true

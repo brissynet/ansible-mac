@@ -22,8 +22,17 @@
     - role: geerlingguy.mac.dock
       when: configure_dock
       tags: ['dock']
-  
+
   tasks:
     - import_tasks: tasks/osx.yml
       when: configure_osx
       tags: ['osx']
+    - import_tasks: tasks/firefox.yml
+      when: configure_firefox
+      tags: ['firefox']
+    - import_tasks: tasks/slack.yml
+      when: configure_slack
+      tags: ['slack']
+    - import_tasks: tasks/vscode.yml
+      when: configure_vscode
+      tags: ['vscode']

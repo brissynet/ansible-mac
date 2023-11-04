@@ -4,6 +4,10 @@ downloads: ~/.ansible-downloads
 configure_osx: true
 osx_script: "~/.osx --no-restart"
 
+configure_firefox: true
+configure_slack: true
+configure_vscode: true
+
 configure_dotfiles: true
 dotfiles_repo: https://github.com/david-oliver/dotfiles.git
 dotfiles_repo_version: main
@@ -67,6 +71,7 @@ homebrew_installed_packages:
   - virtualenv
   - xcodegen
   - xz
+  - yamllint
   - yq
 
 homebrew_taps:
@@ -95,7 +100,7 @@ homebrew_cask_apps:
   - zoom
 
 configure_dock: true
-dockitems_remove: 
+dockitems_remove:
   - Launchpad
   - Safari
   - Messages
@@ -110,8 +115,8 @@ dockitems_remove:
   - TV
   - Music
   - News
-  - "App Store" 
-dockitems_persist: 
+  - "App Store"
+dockitems_persist:
   - name: Firefox
     path: /Applications/Firefox.app/
     pos: 1

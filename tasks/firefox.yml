@@ -1,0 +1,32 @@
+---
+- name: 'Create Extension Distribution Directory'
+  ansible.builtin.file:
+    path: /Applications/Firefox.app/Contents/Resources/distribution/extensions
+    state: directory
+    mode: '0755'
+
+- name: 'Ensure Apple quarantine is removed'
+  shell: xattr -d com.apple.quarantine /Applications/Firefox.app
+  ignore_errors: true
+  become: true
+
+- name: 'Download 1 password addon'
+  uri:
+    url: 'https://addons.mozilla.org/firefox/downloads/file/4168788/1password.xpi'
+    method: GET
+    dest: '/Applications/Firefox.app/Contents/Resources/distribution/extensions/{d634138d-c276-4fc8-924b-40a0ea21d284}.xpi'
+    status_code: 200,304
+
+- name: 'Download Ublock Origin addon'
+  uri:
+    url: 'https://addons.mozilla.org/firefox/downloads/file/4188488/ublock.xpi'
+    method: GET
+    dest: '/Applications/Firefox.app/Contents/Resources/distribution/extensions/uBlock0@raymondhill.net.xpi'
+    status_code: 200,304
+
+- name: 'Download NoScript addon'
+  uri:
+    url: 'https://addons.mozilla.org/firefox/downloads/file/4178438/noscript.xpi'
+    method: GET
+    dest: '/Applications/Firefox.app/Contents/Resources/distribution/extensions/{73a6fe31-595d-460b-a920-fcc0f8843232}.xpi'
+    status_code: 200,304
