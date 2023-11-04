@@ -3,3 +3,20 @@
   shell: xattr -d com.apple.quarantine /Applications/VSCodium.app
   ignore_errors: true
   become: true
+
+- name: Install Codium Plugins
+  ansible.builtin.shell: codium --install-extension "{{ item }}"
+  loop:
+    - 42Crunch.vscode-openapi
+    - donjayamanne.githistory
+    - donjayamanne.python-environment-manager
+    - eamodio.gitlens
+    - golang.go
+    - hbenl.test-adapter-converter
+    - hbenl.vscode-test-explorer
+    - littlefoxteam.vscode-python-test-adapter
+    - ms-python.pylint
+    - ms-python.python
+    - njpwerner.autodocstring
+    - PKief.material-icon-theme
+    - redhat.vscode-yaml
