@@ -11,8 +11,10 @@ dotfiles_repo_accept_hostkey: true
 dotfiles_repo_local_destination: ~/Code/dotfiles
 dotfiles_files:
   - .bashrc
+  - .bash_profile
   - .git-completion.bash
   - .osx
+  - .gitconfig
 
 homebrew_installed_packages:
   - act
