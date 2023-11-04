@@ -36,3 +36,6 @@
     - import_tasks: tasks/vscode.yml
       when: configure_vscode
       tags: ['vscode']
+    - import_tasks: tasks/cis.yml
+      when: configure_cis
+      tags: ['cis']

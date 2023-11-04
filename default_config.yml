@@ -7,6 +7,7 @@ osx_script: "~/.osx --no-restart"
 configure_firefox: true
 configure_slack: true
 configure_vscode: true
+configure_cis: true
 
 configure_dotfiles: true
 dotfiles_repo: https://github.com/david-oliver/dotfiles.git
