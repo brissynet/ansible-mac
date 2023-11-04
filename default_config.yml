@@ -93,7 +93,22 @@ homebrew_cask_apps:
   - zoom
 
 configure_dock: true
-dockitems_remove: []
+dockitems_remove: 
+  - Launchpad
+  - Safari
+  - Messages
+  - Mail
+  - Maps
+  - Photos
+  - FaceTime
+  - Contacts
+  - Reminders
+  - Notes
+  - Freeform
+  - TV
+  - Music
+  - News
+  - "App Store" 
 dockitems_persist: 
   - name: Firefox
     path: /Applications/Firefox.app/
