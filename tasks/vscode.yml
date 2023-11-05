@@ -5,18 +5,50 @@
   become: true
 
 - name: Install Codium Plugins
-  ansible.builtin.shell: codium --install-extension "{{ item }}"
+  ansible.builtin.shell: code --install-extension "{{ item }}"
   loop:
     - 42Crunch.vscode-openapi
+    - alefragnani.project-manager
+    - almenon.arepl
+    - amazonwebservices.aws-toolkit-vscode
+    - batisteo.vscode-django
+    - Boto3typed.boto3-ide
+    - codezombiech.gitignore
+    - cstrap.python-snippets
+    - deerawan.vscode-dash
+    - demystifying-javascript.python-extensions-pack
+    - donjayamanne.git-extension-pack
     - donjayamanne.githistory
     - donjayamanne.python-environment-manager
     - eamodio.gitlens
-    - golang.go
-    - hbenl.test-adapter-converter
+    - github.vscode-github-actions
+    - hashicorp.terraform
     - hbenl.vscode-test-explorer
+    - kaih2o.python-resource-monitor
+    - KevinRose.vsc-python-indent
     - littlefoxteam.vscode-python-test-adapter
+    - mintlify.document
+    - mrpbennett.atlantic-night
+    - ms-python.black-formatter
     - ms-python.pylint
     - ms-python.python
+    - ms-python.vscode-pylance
+    - ms-toolsai.jupyter
+    - ms-toolsai.jupyter-keymap
+    - ms-toolsai.jupyter-renderers
+    - ms-toolsai.vscode-jupyter-cell-tags
+    - ms-toolsai.vscode-jupyter-slideshow
+    - ms-vscode.test-adapter-converter
     - njpwerner.autodocstring
+    - njqdev.vscode-python-typehint
+    - oderwat.indent-rainbow
     - PKief.material-icon-theme
     - redhat.vscode-yaml
+    - streetsidesoftware.code-spell-checker
+    - thebarkman.vscode-djaneiro
+    - traBpUkciP.wolf
+    - VisualStudioExptTeam.intellicode-api-usage-examples
+    - VisualStudioExptTeam.vscodeintellicode
+    - xirider.livecode
+    - ziyasal.vscode-open-in-github
+
