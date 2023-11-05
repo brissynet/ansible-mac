@@ -52,6 +52,7 @@ homebrew_installed_packages:
   - pcre2
   - pre-commit
   - pycparser
+  - pyenv
   - python-certifi
   - python-cryptography
   - python-lxml
@@ -97,7 +98,7 @@ homebrew_cask_apps:
   - slack
   - spotify
   - vlc
-  - vscodium
+  - visual-studio-code
   - zoom
 
 configure_dock: true
