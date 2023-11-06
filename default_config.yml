@@ -126,7 +126,7 @@ dockitems_persist:
     path: /Applications/iTerm.app/
     pos: 2
   - name: VSCodium
-    path: /Applications/VSCodium.app/
+    path: "/Applications/Visual Studio Code.app/"
     pos: 3
   - name: Slack
     path: /Applications/Slack.app/
