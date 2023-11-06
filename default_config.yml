@@ -23,8 +23,6 @@ dotfiles_files:
   - .git-completion.bash
   - .osx
   - .gitconfig
-  - .aws/profile
-  - .aws/credentials
 
 homebrew_installed_packages:
   - act
