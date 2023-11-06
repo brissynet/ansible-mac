@@ -1,0 +1,4 @@
+- name: 'Install Latest nodejs LTS'
+  shell: "source ~/.bashrc && nvm install lts/* --reinstall-packages-from=current"
+  args:
+    executable: /usr/local/bin/bash

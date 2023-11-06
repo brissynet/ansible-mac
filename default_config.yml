@@ -8,6 +8,7 @@ configure_firefox: true
 configure_slack: true
 configure_vscode: true
 configure_cis: true
+configure_node: true
 
 configure_mouse: true
 
@@ -50,7 +51,7 @@ homebrew_installed_packages:
   - libpng
   - libvorbis
   - mpdecimal
-  - node
+  - nvm
   - oniguruma
   - openssl@3
   - packer
