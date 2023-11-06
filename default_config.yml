@@ -9,6 +9,8 @@ configure_slack: true
 configure_vscode: true
 configure_cis: true
 
+configure_mouse: true
+
 configure_dotfiles: true
 dotfiles_repo: https://github.com/david-oliver/dotfiles.git
 dotfiles_repo_version: main
@@ -30,8 +32,10 @@ homebrew_installed_packages:
   - bash-git-prompt
   - ca-certificates
   - cffi
+  - container-diff
   - docutils
   - docker-completion
+  - docker-slim
   - dockutil
   - dosbox
   - gdbm
@@ -39,12 +43,14 @@ homebrew_installed_packages:
   - git
   - go
   - golangci-lint
+  - infracost
   - jq
   - libyaml
   - libogg
   - libpng
   - libvorbis
   - mpdecimal
+  - node
   - oniguruma
   - openssl@3
   - packer
@@ -70,6 +76,12 @@ homebrew_installed_packages:
   - sqlite
   - stella
   - terraform
+  - terraform-docs
+  - terraform-ls
+  - terrascan
+  - thefuck
+  - tflint
+  - trivy
   - virtualenv
   - xcodegen
   - xz
@@ -134,3 +146,12 @@ dockitems_persist:
   - name: Signal
     path: /Applications/Signal.app/
     pos: 5
+
+configure_python: true
+pyenv_env: 'system'
+pyenv_owner_group: 'staff'
+pyenv_global: 
+  - "3.11.6"
+pyenv_python_versions: 
+  - "3.11.6"
+  - "3.12.0"
