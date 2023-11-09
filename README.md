@@ -13,4 +13,3 @@
   4. Run `ansible-galaxy install -r requirements.yml` inside this directory to install required Ansible roles.
   5. Run `ansible-playbook main.yml --ask-become-pass` inside this directory. Enter your macOS account password when prompted for the 'BECOME' password.
   6. To run individual sections, use --tags "tag1,tag2" as an extra argument to the playbook.
-
