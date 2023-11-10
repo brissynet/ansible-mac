@@ -16,7 +16,7 @@
     - role: elliotweiser.osx-command-line-tools
     - role: geerlingguy.mac.homebrew
       tags: ['homebrew']
-    - role: geerlingguy.dotfiles
+    - role: dotfiles
       when: configure_dotfiles
       tags: ['dotfiles']
     - role: geerlingguy.mac.dock
