@@ -1,3 +1,4 @@
+---
 - name: (Mouse) Enable right click
   community.general.osx_defaults:
     domain: com.apple.AppleMultitouchMouse

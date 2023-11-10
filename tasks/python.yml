@@ -1,3 +1,4 @@
+---
 - name: Install global Pip packages.
   pip:
     name: "{{ item.name | default(item) }}"
@@ -5,4 +6,3 @@
     version: "{{ item.version | default(omit) }}"
     executable: "{{ item.executable | default('pip3') }}"
   loop: "{{ pip_packages }}"
-  

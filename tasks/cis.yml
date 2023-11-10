@@ -1,88 +1,88 @@
 ---
-  - name: 1.2 Ensure Auto Update Is Enabled
-    community.general.osx_defaults:
-      domain: /Library/Preferences/com.apple.SoftwareUpdate 
-      key: AutomaticCheckEnabled 
-      type: int 
-      value: 1
-    become: true
+- name: 1.2 Ensure Auto Update Is Enabled
+  community.general.osx_defaults:
+    domain: /Library/Preferences/com.apple.SoftwareUpdate
+    key: AutomaticCheckEnabled
+    type: int
+    value: 1
+  become: true
 
-  - name: 1.3 Ensure Download New Updates When Available is Enabled
-    community.general.osx_defaults:
-      domain: /Library/Preferences/com.apple.SoftwareUpdate 
-      key: AutomaticDownload
-      type: int 
-      value: 1
-    become: true
+- name: 1.3 Ensure Download New Updates When Available is Enabled
+  community.general.osx_defaults:
+    domain: /Library/Preferences/com.apple.SoftwareUpdate
+    key: AutomaticDownload
+    type: int
+    value: 1
+  become: true
 
-  - name: 1.4 Ensure Install of MacOS Updates Is Enabled
-    community.general.osx_defaults:
-      domain: /Library/Preferences/com.apple.SoftwareUpdate 
-      key: AutomaticallyInstallMacOSUpdates
-      type: int
-      value: 1
-    become: true
+- name: 1.4 Ensure Install of MacOS Updates Is Enabled
+  community.general.osx_defaults:
+    domain: /Library/Preferences/com.apple.SoftwareUpdate
+    key: AutomaticallyInstallMacOSUpdates
+    type: int
+    value: 1
+  become: true
 
-  - name: 1.5 Ensure Install Application Updates from the App Store Is Enabled
-    community.general.osx_defaults:
-      domain: /Library/Preferences/com.apple.commerce 
-      key: AutoUpdate
-      type: int
-      value: 1
-    become: true
+- name: 1.5 Ensure Install Application Updates from the App Store Is Enabled
+  community.general.osx_defaults:
+    domain: /Library/Preferences/com.apple.commerce
+    key: AutoUpdate
+    type: int
+    value: 1
+  become: true
 
-  - name: 1.6 Ensure Install Security Responses and System Files Is Enabled
-    community.general.osx_defaults:
-      domain: /Library/Preferences/com.apple.SoftwareUpdate 
-      key: CriticalUpdateInstall
-      type: int
-      value: 1
-    become: true
+- name: 1.6 Ensure Install Security Responses and System Files Is Enabled
+  community.general.osx_defaults:
+    domain: /Library/Preferences/com.apple.SoftwareUpdate
+    key: CriticalUpdateInstall
+    type: int
+    value: 1
+  become: true
 
-  - name: 1.6 Ensure Software Update Deferment is less than or equal to 30 days
-    community.general.osx_defaults:
-      domain: /Library/Preferences/com.apple.applicationaccess 
-      key: enforcedSoftwareUpdateDelay
-      type: int
-      value: 7
-    become: true
+- name: 1.6 Ensure Software Update Deferment is less than or equal to 30 days
+  community.general.osx_defaults:
+    domain: /Library/Preferences/com.apple.applicationaccess
+    key: enforcedSoftwareUpdateDelay
+    type: int
+    value: 7
+  become: true
 
-  - name: 1.6 Ensure iCloud Drive Document and Desktop Sync is Disabled
-    community.general.osx_defaults:
-      domain: /Library/Preferences/com.apple.applicationaccess 
-      key: allowCloudDesktopAndDocuments
-      type: int
-      value: 0
-    become: true
+- name: 1.6 Ensure iCloud Drive Document and Desktop Sync is Disabled
+  community.general.osx_defaults:
+    domain: /Library/Preferences/com.apple.applicationaccess
+    key: allowCloudDesktopAndDocuments
+    type: int
+    value: 0
+  become: true
 
-  - name: 2.2.1 Ensure Firewall is Enabled
-    community.general.osx_defaults:
-      domain: /Library/Preferences/com.apple.security.firewall
-      key: EnableFirewall
-      type: int
-      value: 1
-    become: true
+- name: 2.2.1 Ensure Firewall is Enabled
+  community.general.osx_defaults:
+    domain: /Library/Preferences/com.apple.security.firewall
+    key: EnableFirewall
+    type: int
+    value: 1
+  become: true
 
-  - name: 2.2.1 Ensure Firewall is Enabled
-    community.general.osx_defaults:
-      domain: /Library/Preferences/com.apple.alf
-      key: globalstate
-      type: int
-      value: 1
-    become: true    
+- name: 2.2.1 Ensure Firewall is Enabled
+  community.general.osx_defaults:
+    domain: /Library/Preferences/com.apple.alf
+    key: globalstate
+    type: int
+    value: 1
+  become: true
 
-  - name: 2.2.2 Ensure Firewall Stealth Mode is Enabled
-    community.general.osx_defaults:
-      domain: /Library/Preferences/com.apple.alf
-      key: steathenabled
-      type: int
-      value: 1
-    become: true
+- name: 2.2.2 Ensure Firewall Stealth Mode is Enabled
+  community.general.osx_defaults:
+    domain: /Library/Preferences/com.apple.alf
+    key: steathenabled
+    type: int
+    value: 1
+  become: true
 
-  - name: 2.2.2 Ensure Firewall Stealth Mode is Enabled
-    community.general.osx_defaults:
-      domain: /Library/Preferences/com.apple.security.firewall
-      key: EnableStealthMode
-      type: int
-      value: 1
-    become: true 
+- name: 2.2.2 Ensure Firewall Stealth Mode is Enabled
+  community.general.osx_defaults:
+    domain: /Library/Preferences/com.apple.security.firewall
+    key: EnableStealthMode
+    type: int
+    value: 1
+  become: true

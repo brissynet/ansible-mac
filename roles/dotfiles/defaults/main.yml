@@ -6,8 +6,5 @@ dotfiles_repo_local_destination: "~/Code/dotfiles"
 
 dotfiles_home: "~"
 dotfiles_files:
-  - .bashrc
-  - .bash_profile
-  - .git-completion.bash
-  - .osx
-  - .gitconfig
+  - name: .bashrc
+    mode: 640

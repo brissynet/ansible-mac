@@ -22,17 +22,28 @@ dotfiles_repo_version: main
 dotfiles_repo_accept_hostkey: true
 dotfiles_repo_local_destination: ~/Code/dotfiles
 dotfiles_files:
-  - .bashrc
-  - .bash_profile
-  - .git-completion.bash
-  - .osx
-  - .gitconfig
-  - .ssh/config
-  - .ssh/environments.d/
-  - .ssh/environments.d/github
-  - .aws/
-  - .aws/config
-  - .aws/credentials
+  - name: .bashrc
+    mode: '640'
+  - name: .bash_profile
+    mode: '640'
+  - name: .git-completion.bash
+    mode: '640'
+  - name: .osx
+    mode: '750'
+  - name: .gitconfig
+    mode: '640'
+  - name: .ssh/config
+    mode: '600'
+  - name: .ssh/environments.d/
+    mode: '700'
+  - name: .ssh/environments.d/github
+    mode: '600'
+  - name: .aws/
+    mode: '700'
+  - name: .aws/config
+    mode: '600'
+  - name: .aws/credentials
+    mode: '600'
 
 homebrew_installed_packages:
   - act
@@ -164,8 +175,8 @@ npm_packages: []
 configure_python: true
 pyenv_env: 'system'
 pyenv_owner_group: 'staff'
-pyenv_global: 
+pyenv_global:
   - "3.11.6"
-pyenv_python_versions: 
+pyenv_python_versions:
   - "3.11.6"
   - "3.12.0"

@@ -3,7 +3,7 @@
   file:
     path: "{{ item }}"
     state: directory
-    recurse: no
+    recurse: false
     mode: 0750
   loop:
     - "{{ vim_dir }}"
@@ -19,9 +19,9 @@
   git:
     dest: "{{ vim_dir }}/bundle/{{ item.name }}"
     repo: "{{ item.url }}"
-    clone: yes
-    update: yes
-    recursive: no
-  loop:
-  - name: vim-terraform
-    url: https://github.com/hashivim/vim-terraform.git
+    clone: true
+    update: true
+    recursive: false
+    loop:
+      - name: vim-terraform
+        url: https://github.com/hashivim/vim-terraform.git

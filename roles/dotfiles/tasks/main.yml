@@ -8,7 +8,7 @@
   become: false
 
 - name: Check which dotfiles already exist.
-  command: "ls -F {{ dotfiles_home }}/{{ item }}"
+  command: "ls -F {{ dotfiles_home }}/{{ item.name }}"
   register: existing_dotfile_info
   failed_when: false
   check_mode: false
@@ -23,7 +23,8 @@
 
 - name: Copy dotfiles into home folder.
   copy:
-    src: "{{ dotfiles_repo_local_destination }}/{{ item }}"
-    dest: "{{ dotfiles_home }}/{{ item }}"
+    src: "{{ dotfiles_repo_local_destination }}/{{ item.name }}"
+    dest: "{{ dotfiles_home }}/{{ item.name }}"
+    mode: "{{ item.mode }}"
   become: false
   with_items: "{{ dotfiles_files }}"
