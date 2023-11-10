@@ -7,7 +7,7 @@
 
   pre_tasks:
     - name: Include playbook configuration.
-      include_vars: "{{ item }}"
+      ansible.builtin.include_vars: "{{ item }}"
       with_fileglob:
         - "{{ playbook_dir }}/config.yml"
       tags: ['always']
@@ -27,27 +27,35 @@
       tags: ['python']
 
   tasks:
-    - import_tasks: tasks/mouse.yml
+    - name: Configure mouse
+      ansible.builtin.import_tasks: tasks/mouse.yml
       when: configure_mouse
       tags: ['mouse']
-    - import_tasks: tasks/osx.yml
+    - name: Configure OSX
+      ansible.builtin.import_tasks: tasks/osx.yml
       when: configure_osx
       tags: ['osx']
-    - import_tasks: tasks/firefox.yml
+    - name: Configure Firefox
+      ansible.builtin.import_tasks: tasks/firefox.yml
       when: configure_firefox
       tags: ['firefox']
-    - import_tasks: tasks/slack.yml
+    - name: Configure Slack
+      ansible.builtin.import_tasks: tasks/slack.yml
       when: configure_slack
       tags: ['slack']
-    - import_tasks: tasks/vscode.yml
+    - name: Configure VSCode
+      ansible.builtin.import_tasks: tasks/vscode.yml
       when: configure_vscode
       tags: ['vscode']
-    - import_tasks: tasks/cis.yml
+    - name: Run CIS Changes
+      ansible.builtin.import_tasks: tasks/cis.yml
       when: configure_cis
       tags: ['cis']
-    - import_tasks: tasks/node.yml
+    - name: Configure NodeJS
+      ansible.builtin.import_tasks: tasks/node.yml
       when: configure_node
       tags: ['node']
-    - import_tasks: tasks/python.yml
+    - name: Configure Python
+      ansible.builtin.import_tasks: tasks/python.yml
       when: configure_python
       tags: ['python']

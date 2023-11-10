@@ -1,5 +1,5 @@
 ---
 - name: 'Ensure Apple quarantine is removed'
-  shell: xattr -d com.apple.quarantine /Applications/Slack.app
+  ansible.builtin.shell: xattr -d com.apple.quarantine /Applications/Slack.app
   ignore_errors: true
   become: true
