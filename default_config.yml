@@ -180,3 +180,4 @@ pyenv_global:
 pyenv_python_versions:
   - "3.11.6"
   - "3.12.0"
+pip_packages: []
