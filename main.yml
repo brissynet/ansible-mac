@@ -22,8 +22,14 @@
     - role: geerlingguy.mac.dock
       when: configure_dock
       tags: ['dock']
+    - role: staticdev.pyenv
+      when: configure_python
+      tags: ['python']
 
   tasks:
+    - import_tasks: tasks/mouse.yml
+      when: configure_mouse
+      tags: ['mouse']
     - import_tasks: tasks/osx.yml
       when: configure_osx
       tags: ['osx']

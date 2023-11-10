@@ -1,8 +1,3 @@
-- name: 'Install Latest nodejs LTS'
-  shell: "source ~/.bashrc && nvm install lts/* --reinstall-packages-from=current"
-  args:
-    executable: /usr/local/bin/bash
-
 - name: Install global NPM packages.
   npm:
     name: "{{ item.name | default(item) }}"

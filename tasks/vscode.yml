@@ -1,6 +1,6 @@
 ---
 - name: 'Ensure Apple quarantine is removed'
-  shell: xattr -d com.apple.quarantine /Applications/VSCodium.app
+  shell: xattr -d com.apple.quarantine "/Applications/Visual Studio Code.app"
   ignore_errors: true
   become: true
 
@@ -21,6 +21,7 @@
     - donjayamanne.githistory
     - donjayamanne.python-environment-manager
     - eamodio.gitlens
+    - esbenp.prettier-vscode
     - github.vscode-github-actions
     - hashicorp.terraform
     - hbenl.vscode-test-explorer
@@ -28,7 +29,7 @@
     - KevinRose.vsc-python-indent
     - littlefoxteam.vscode-python-test-adapter
     - mintlify.document
-    - mrpbennett.atlantic-night
+    # - mrpbennett.atlantic-night
     - ms-python.black-formatter
     - ms-python.pylint
     - ms-python.python

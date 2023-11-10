@@ -9,6 +9,8 @@ configure_slack: true
 configure_vscode: true
 configure_cis: true
 
+configure_mouse: true
+
 configure_sudoers: false
 sudoers_custom_config: |
   # Allow users in admin group to use sudo with no password.
@@ -35,8 +37,10 @@ homebrew_installed_packages:
   - bash-git-prompt
   - ca-certificates
   - cffi
+  - container-diff
   - docutils
   - docker-completion
+  - docker-slim
   - dockutil
   - dosbox
   - gdbm
@@ -44,12 +48,14 @@ homebrew_installed_packages:
   - git
   - go
   - golangci-lint
+  - infracost
   - jq
   - libyaml
   - libogg
   - libpng
   - libvorbis
   - mpdecimal
+  - nvm
   - oniguruma
   - openssl@3
   - packer
@@ -75,6 +81,12 @@ homebrew_installed_packages:
   - sqlite
   - stella
   - terraform
+  - terraform-docs
+  - terraform-ls
+  - terrascan
+  - thefuck
+  - tflint
+  - trivy
   - virtualenv
   - xcodegen
   - xz
@@ -131,7 +143,7 @@ dockitems_persist:
     path: /Applications/iTerm.app/
     pos: 2
   - name: VSCodium
-    path: /Applications/VSCodium.app/
+    path: "/Applications/Visual Studio Code.app/"
     pos: 3
   - name: Slack
     path: /Applications/Slack.app/
@@ -144,4 +156,10 @@ configure_node: true
 npm_packages: []
 
 configure_python: true
-pip_packages: []
+pyenv_env: 'system'
+pyenv_owner_group: 'staff'
+pyenv_global: 
+  - "3.11.6"
+pyenv_python_versions: 
+  - "3.11.6"
+  - "3.12.0"
