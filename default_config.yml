@@ -9,6 +9,11 @@ configure_slack: true
 configure_vscode: true
 configure_cis: true
 
+configure_sudoers: false
+sudoers_custom_config: |
+  # Allow users in admin group to use sudo with no password.
+  %admin ALL=(ALL) NOPASSWD: ALL
+
 configure_dotfiles: true
 dotfiles_repo: https://github.com/david-oliver/dotfiles.git
 dotfiles_repo_version: main
@@ -134,3 +139,9 @@ dockitems_persist:
   - name: Signal
     path: /Applications/Signal.app/
     pos: 5
+
+configure_node: true
+npm_packages: []
+
+configure_python: true
+pip_packages: []

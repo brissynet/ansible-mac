@@ -39,3 +39,9 @@
     - import_tasks: tasks/cis.yml
       when: configure_cis
       tags: ['cis']
+    - import_tasks: tasks/node.yml
+      when: configure_node
+      tags: ['node']
+    - import_tasks: tasks/python.yml
+      when: configure_python
+      tags: ['python']
