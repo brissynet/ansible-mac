@@ -27,6 +27,12 @@ dotfiles_files:
   - .git-completion.bash
   - .osx
   - .gitconfig
+  - .ssh/config
+  - .ssh/environments.d/
+  - .ssh/environments.d/github
+  - .aws/
+  - .aws/config
+  - .aws/credentials
 
 homebrew_installed_packages:
   - act
