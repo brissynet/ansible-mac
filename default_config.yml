@@ -128,6 +128,7 @@ homebrew_cask_apps:
   - iterm2
   - libreoffice
   - openlens
+  - pritunl
   - signal
   - slack
   - spotify
