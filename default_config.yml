@@ -151,6 +151,10 @@ dockitems_remove:
   - TV
   - Music
   - News
+  - Podcasts
+  - Keynote
+  - Numbers
+  - Pages
   - "App Store"
 dockitems_persist:
   - name: Firefox
