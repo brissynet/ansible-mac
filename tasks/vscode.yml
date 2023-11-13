@@ -13,6 +13,7 @@
     - amazonwebservices.aws-toolkit-vscode
     - batisteo.vscode-django
     - Boto3typed.boto3-ide
+    - charliermarsh.ruff
     - codezombiech.gitignore
     - cstrap.python-snippets
     - deerawan.vscode-dash
