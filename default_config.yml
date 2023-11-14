@@ -60,6 +60,7 @@ homebrew_installed_packages:
   - docker-slim
   - dockutil
   - dosbox
+  - driftctl
   - gdbm
   - gettext
   - git
@@ -187,3 +188,4 @@ pyenv_python_versions:
   - "3.12.0"
 pip_packages: 
   - yawsso
+  - cf2tf
