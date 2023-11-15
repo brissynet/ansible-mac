@@ -129,6 +129,7 @@ homebrew_cask_apps:
   - iterm2
   - libreoffice
   - openlens
+  - pgadmin4
   - pritunl
   - signal
   - slack
