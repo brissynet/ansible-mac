@@ -72,6 +72,7 @@ homebrew_installed_packages:
   - libogg
   - libpng
   - libvorbis
+  - localstack
   - mpdecimal
   - nvm
   - oniguruma
@@ -100,6 +101,7 @@ homebrew_installed_packages:
   - stella
   - terraform
   - terraform-docs
+  - terraform-local
   - terraform-ls
   - terrascan
   - thefuck
@@ -128,6 +130,7 @@ homebrew_cask_apps:
   - intellij-idea
   - iterm2
   - libreoffice
+  - maccy
   - openlens
   - pgadmin4
   - pritunl
