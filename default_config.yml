@@ -135,7 +135,9 @@ homebrew_cask_apps:
   - intellij-idea
   - iterm2
   - libreoffice
+  - little-snitch
   - maccy
+  - micro-snitch
   - openlens
   - pgadmin4
   - pritunl
