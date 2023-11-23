@@ -121,6 +121,7 @@ homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
   - android-platform-tools
   - chromedriver
+  - datagrip
   - deluge
   - docker
   - firefox
@@ -134,11 +135,13 @@ homebrew_cask_apps:
   - openlens
   - pgadmin4
   - pritunl
+  - pycharm
   - signal
   - slack
   - spotify
   - vlc
   - visual-studio-code
+  - webstorm
   - zoom
 
 configure_dock: true
@@ -183,13 +186,21 @@ configure_node: true
 npm_packages: []
 
 configure_python: true
-pyenv_env: 'system'
+pyenv_env: 'user'
 pyenv_owner_group: 'staff'
 pyenv_global:
   - "3.11.6"
 pyenv_python_versions:
   - "3.11.6"
-  - "3.12.0"
+  - "3.10.13"
+  - "3.9.18"
+pyenv_virtualenvs:
+  - venv_name: latest_v311
+    py_version: 3.11.6
+  - venv_name: latest_v310
+    py_version: 3.10.13
+  - venv_name: latest_v39
+    py_version: 3.9.18
 pip_packages: 
   - yawsso
   - cf2tf
