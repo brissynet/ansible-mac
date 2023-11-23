@@ -54,9 +54,13 @@ homebrew_installed_packages:
   - bash-git-prompt
   - ca-certificates
   - cffi
+  - colima
   - container-diff
   - docutils
   - docker-completion
+  - docker-compose 
+  - docker-credential-helper 
+  - docker-credential-helper-ecr
   - docker-slim
   - dockutil
   - dosbox
