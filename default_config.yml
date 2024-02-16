@@ -58,8 +58,8 @@ homebrew_installed_packages:
   - container-diff
   - docutils
   - docker-completion
-  - docker-compose 
-  - docker-credential-helper 
+  - docker-compose
+  - docker-credential-helper
   - docker-credential-helper-ecr
   - docker-slim
   - dockutil
@@ -100,6 +100,7 @@ homebrew_installed_packages:
   - sdl2
   - sdl_net
   - sdl_sound
+  - session-manager-plugin
   - six
   - sqlite
   - stella
@@ -207,6 +208,6 @@ pyenv_virtualenvs:
     py_version: 3.10.13
   - venv_name: latest_v39
     py_version: 3.9.18
-pip_packages: 
+pip_packages:
   - yawsso
   - cf2tf
