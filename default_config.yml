@@ -196,18 +196,12 @@ configure_python: true
 pyenv_env: 'user'
 pyenv_owner_group: 'staff'
 pyenv_global:
-  - "3.11.6"
+  - "3.12.3"
 pyenv_python_versions:
-  - "3.11.6"
-  - "3.10.13"
-  - "3.9.18"
+  - "3.12.3"
 pyenv_virtualenvs:
-  - venv_name: latest_v311
-    py_version: 3.11.6
-  - venv_name: latest_v310
-    py_version: 3.10.13
-  - venv_name: latest_v39
-    py_version: 3.9.18
+  - venv_name: latest_v312
+    py_version: 3.12.3
 pip_packages:
   - yawsso
   - cf2tf
